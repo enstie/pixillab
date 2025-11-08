@@ -1,70 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixillap — Luxury Videography & Photography</title>
-    <meta name="description" content="Pixillap: Cinematic luxury videography and photography with a fast, framework‑free static site." />
-    <link rel="canonical" href="https://enstie.github.io/pixillab/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://enstie.github.io/pixillab/" />
-    <meta property="og:title" content="Pixillap — Luxury Videography & Photography" />
-    <meta property="og:description" content="Cinematic luxury videography & photography delivered via a fast static site (no React)." />
-    <meta property="og:image" content="https://enstie.github.io/pixillab/assets/og-cover.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pixillap — Luxury Videography & Photography" />
-    <meta name="twitter:description" content="Cinematic luxury videography & photography delivered via a fast static site." />
-    <meta name="twitter:image" content="https://enstie.github.io/pixillab/assets/og-cover.jpg" />
-    <meta name="theme-color" content="#0b0f14" />
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script defer src="js/main.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="navbar">
-        <a href="index.html" class="logo" aria-label="Pixillap Home">
-          <img src="assets/logo.svg" alt="Pixillap Logo" height="36" />
-          <span class="brand-text">Pixillap</span>
-        </a>
-        <button class="nav-toggle" aria-label="Toggle navigation" data-action="toggle-nav">Menu</button>
-        <ul class="nav-links" data-nav>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-inner">
-          <h1 class="hero-title">Luxury Videography & Photography</h1>
-          <p class="hero-subtitle">Cinematic visual narratives delivered with speed and elegance in a framework‑free build.</p>
-          <div class="hero-cta">
-            <a href="services.html" class="btn btn-primary">Our Services</a>
-            <a href="contact.html" class="btn btn-outline">Book a Session</a>
-          </div>
-        </div>
-      </section>
-      <section class="section container">
-        <h2 class="section-title">Signature Offerings</h2>
-        <p class="section-intro muted">Curated premium visual experiences.</p>
-        <div class="cards" data-cards-container></div>
-      </section>
-      <section class="section-alt">
-        <div class="container">
-          <h2 class="section-title">Why Static?</h2>
-          <p class="muted max-640">Removing framework overhead improves first paint performance, lowers JavaScript cost, and keeps the interface accessible, indexable, and easy to maintain.</p>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Pixillap. All rights reserved.</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pixillap — Home</title>
+  <meta name="description" content="Framework-free static site delivering lightweight performance and fast load times." />
+  <link rel="preload" href="css/main.css" as="style" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header" data-component="navbar">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Pixillap</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" data-action="toggle-nav">☰</button>
+      <ul class="nav-links" data-nav>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <section class="hero">
+      <h1>Welcome to Pixillap</h1>
+      <p>Same lean static architecture: plain HTML, CSS, and vanilla JS — fast, indexable, and easy to extend.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="services.html">Our Services</a>
+        <a class="btn-secondary" href="contact.html">Book Now</a>
+      </div>
+    </section>
+    <section class="features">
+      <h2>Features</h2>
+      <div class="cards" data-cards-container></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Pixillap</p>
+  </footer>
+</body>
 </html>
