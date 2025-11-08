@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Fast Load", "body": "No virtual DOM overhead." },
+  { "id": 2, "title": "Lean Assets", "body": "Only essential CSS/JS shipped." },
+  { "id": 3, "title": "SEO Friendly", "body": "Multiple real HTML pages." }
+]
