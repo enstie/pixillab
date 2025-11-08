@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enstie.github.io/pixillab/sitemap.xml

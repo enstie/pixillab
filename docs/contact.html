@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixillap — Contact</title>
+    <meta name="description" content="Contact Pixillap for bookings, collaborations, and inquiries." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="logo" aria-label="Pixillap Home">
+          <img src="assets/logo.svg" alt="Pixillap Logo" height="36" />
+          <span class="brand-text">Pixillap</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" data-action="toggle-nav">Menu</button>
+        <ul class="nav-links" data-nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section container">
+        <h1 class="section-title">Contact</h1>
+        <p class="muted max-640">For bookings and collaborations, tell us about your project below.</p>
+
+        <form class="card" style="margin-top:1rem;" action="mailto:hello@example.com" method="post" enctype="text/plain">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" required placeholder="Tell us about your project"></textarea>
+          </label>
+          <div style="display:flex; gap:.6rem; margin-top:.6rem;">
+            <button type="submit" class="btn btn-primary">Send</button>
+            <a href="mailto:hello@example.com" class="btn btn-outline">Email Directly</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Pixillap. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
