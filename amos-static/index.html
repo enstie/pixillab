@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amos — Home</title>
+  <link rel="preload" href="css/main.css" as="style" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header" data-component="navbar">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Amos</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" data-action="toggle-nav">☰</button>
+      <ul class="nav-links" data-nav>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <h1>Welcome to Amos</h1>
+      <p>Same UI and performance, now with plain HTML, CSS, and vanilla JS.</p>
+      <a class="btn-primary" href="about.html">Learn More</a>
+    </section>
+
+    <section class="features">
+      <h2>Features</h2>
+      <div class="cards" data-cards-container>
+        <!-- Cards populated by JS or replace with static HTML -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Amos</p>
+  </footer>
+</body>
+</html>
