@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixillap — Luxury Videography & Photography</title>
+    <meta name="description" content="Pixillap: Luxury videography and photography presented as a fast static site (no React)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.svg" alt="Pixillap Logo" height="36" />
+          <span class="brand-text">Pixillap</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" data-action="toggle-nav">Menu</button>
+        <ul class="nav-links" data-nav>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h1 class="hero-title">Luxury Videography & Photography</h1>
+          <p class="hero-subtitle">
+            Cinematic visual narratives delivered with speed and elegance in a framework‑free build.
+          </p>
+          <div class="hero-cta">
+            <a href="about.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="features container section">
+        <h2 class="section-title">Signature Offerings</h2>
+        <p class="section-intro muted">Curated premium visual experiences.</p>
+        <div class="cards" data-cards-container></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Pixillap</p>
+    </footer>
+  </body>
+</html>
